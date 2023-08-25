@@ -1,5 +1,5 @@
 
-name: Deploy on testing
+name: Deploy on live
  
 # Controls when the action will run. 
 on:
