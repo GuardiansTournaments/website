@@ -1,46 +1,38 @@
----
-name: Feature request website
-about: Suggest an idea for the website
-title: Feature request
-labels: feature
-assignees: joeryvanegmond
-
----
-
 name: Feature request
-description: File a bug report
+description: Describe the feature by giving answer to the following questions
 title: "[Feature]: "
-labels: ["feature", "triage"]
+labels: ["feature"]
 projects: ["guardianstournaments/website"]
 assignees:
   - joeryvanegmond
+repository:
+  - website
 body:
   - type: markdown
     attributes:
       value: |
-        Please fill the following input fields to define your feature
+        Thanks for taking the time to fill out this bug report!
   - type: input
-    id: stakeholder
+    id: as-a
     attributes:
-      label: As a:
-      description: Enter the stakeholder (visitor / moderator / user, etc.)
-      placeholder: Enter stakeholder
-    value: "Visitor"
+      label: As a
+      description: as what do you need this feature?
+      value: "As a new user"
     validations:
       required: true
   - type: textarea
     id: I-want
     attributes:
-      label: I want:
-      description: Enter what you want as a stakeholder
-      value: "I want the opportunity to create a account by connecting my discord account"
+      label: I want
+      description: What do you want as that stakeholder
+      value: "I want the possibility to sign in with my discord account"
     validations:
       required: true
   - type: textarea
     id: so-I-can
     attributes:
-      label: So I can
-      description: Why does the stakeholder want this?
-    value: "So it is easier to create an account"
+      label: So
+      description: So why do you need that?
+      value: "So it's easier to create an account"
     validations:
       required: true
