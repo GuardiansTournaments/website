@@ -25,4 +25,4 @@ jobs:
           username: guardianstournaments.gg
           port: 22
           password: GT@WEBSIT3
-          script: "cd gt_website/testing/website/ && git pull testing testing && cp -r AcademyLeague/public . && cd AcademyLeague && php composer.phar install && php artisan migrate:fresh --seed"
+          script: "cd gt_website/testing/website/ && .scripts/deploy.sh"
