@@ -4,7 +4,7 @@ about: Suggest an idea for the website
 title: ''
 labels: 'feature'
 assignees: ''
-project: 'website'
+status: 'Todo'
 
 ---
 
