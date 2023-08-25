@@ -2,7 +2,7 @@ name: Feature request
 description: Describe the feature by giving answer to the following questions
 title: "[Feature]: "
 labels: ["feature"]
-projects: ["guardianstournaments/1"]
+projects: ["website"]
 assignees:
   - joeryvanegmond
 body:
