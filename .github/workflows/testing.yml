@@ -21,8 +21,8 @@ jobs:
       - name: Login and run scripts
         uses: appleboy/ssh-action@master
         with:
-          host: ssh.strato.com
-          username: guardianstournaments.gg
-          port: 22
-          password: GT@WEBSIT3
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          port: ${{ secrets.SSH_PORT }}
+          password: ${{ secrets.SSH_PASSWORD }}
           script: "cd gt_website/testing/website/ && .scripts/deploy.sh"
