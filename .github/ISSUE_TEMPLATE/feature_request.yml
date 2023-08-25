@@ -5,8 +5,6 @@ labels: ["feature"]
 projects: ["guardianstournaments/website"]
 assignees:
   - joeryvanegmond
-repository:
-  - website
 body:
   - type: markdown
     attributes:
