@@ -1,3 +1,1 @@
-![example branch parameter](https://github.com/GuardiansTournaments/website/actions/workflows/testing.yml/badge.svg?branch=testing)
-
-[test.guardianstournaments.gg](http://test.guardianstournaments.gg)
+[![example branch parameter](https://github.com/GuardiansTournaments/website/actions/workflows/testing.yml/badge.svg?branch=testing)](http://test.guardianstournaments.gg)
