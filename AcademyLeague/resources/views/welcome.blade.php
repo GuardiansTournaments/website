@@ -21,19 +21,10 @@
     <!-- Games -->
     <section class="home_sponsors pb-5">
         <div class="container-fluid p-0">
-            <h1 class="text-center">Available games</h1>
-            <game-slider :images="{{$gameAvatars}}"></game-slider>
+            <!-- <h1 class="text-center">Available games</h1> -->
+            <game-slider></game-slider>
         </div>
     </section>
-
-    <!-- <section class="home_discord">
-        <div class="container-fluid">
-
-            <div class="game-background" style="width: 200px; height: 100%;">
-                <img src="/images/test/Achtergrond/rocketleague.png" width="200" alt="Game banner" class="corners game-overlay p-0 m-0">
-                <img src="/images/test/Gameitems/rocketleague.png" width="200" alt="Game banner" class="corners game-overlay p-0 m-0">
-            </div>
-    </section> -->
 
     <!-- Discord server info -->
     <section class="home_discord">
@@ -80,7 +71,7 @@
     </section>
 
     <section class="home_tournaments">
-        <div class="container-fluid">
+        <div class="container">
             <div class="home_discord_top">
             </div>
             <div class="row d-flex flex-wrap mt-5 justify-content-start">

@@ -1,0 +1,36 @@
+name: Feature request
+description: Describe the feature by giving answer to the following questions
+title: "[Feature]: "
+labels: ["feature"]
+projects: ["website"]
+assignees:
+  - joeryvanegmond
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: as-a
+    attributes:
+      label: As a
+      description: as what do you need this feature?
+      value: "As a new user"
+    validations:
+      required: true
+  - type: textarea
+    id: I-want
+    attributes:
+      label: I want
+      description: What do you want as that stakeholder
+      value: "I want the possibility to sign in with my discord account"
+    validations:
+      required: true
+  - type: textarea
+    id: so-I-can
+    attributes:
+      label: So
+      description: So why do you need that?
+      value: "So it's easier to create an account"
+    validations:
+      required: true

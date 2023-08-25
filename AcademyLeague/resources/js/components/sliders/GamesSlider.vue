@@ -1,9 +1,32 @@
 <template>
-    <slick ref="slick" class="autoplay" :options="slickOptions" style="max-height:200px;">
-        <div v-for="item in this.images" v-bind:key="item.id" class="m-5">
-            <img :src="item.image" width="150" alt="Card image" class="corners p-0 m-0"
-                style="object-fit: contain;">
+    <slick ref="slick" class="autoplay" :options="slickOptions" style="max-height:400px;">
+
+        <div class="position-relative game-slide">
+            <img src="/images/test/achtergrond/rocketleague.png" class="" style="max-width:325px; width:100%;" alt="">
+            <img src="/images/test/gameitems/rocketleague.png" class="position-absolute"
+                style="top:0; left:0; max-width:326px; width:100%;" alt="">
         </div>
+
+
+        <div class="position-relative game-slide">
+            <img src="/images/test/achtergrond/csgo.png" class="" style="max-width:325px; width:100%;" alt="">
+            <img src="/images/test/gameitems/csgo.png" class="position-absolute" style="top:0; left:0; max-width:326px; width:100%;"
+                alt="">
+        </div>
+
+
+        <div class="position-relative game-slide">
+            <img src="/images/test/achtergrond/league.png" class="" style="max-width:325px; width:100%;" alt="">
+            <img src="/images/test/gameitems/league.png" class="position-absolute" style="top:0; left:0; max-width:326px; width:100%;"
+                alt="">
+        </div>
+
+        <div class="position-relative game-slide">
+            <img src="/images/test/achtergrond/valorant.png" class="" style="max-width:325px; width:100%;" alt="">
+            <img src="/images/test/gameitems/valorant.png" class="position-absolute" style="top:0; left:0; max-width:326px; width:100%;"
+                alt="">
+        </div>
+
     </slick>
 </template>
 
@@ -19,7 +42,7 @@ export default {
     data() {
         return {
             slickOptions: {
-                slidesToShow: 4,
+                slidesToShow: 3,
                 slidesToScroll: 3,
                 autoplay: true,
                 autoplaySpeed: 2000,
@@ -30,9 +53,16 @@ export default {
                 infinite: true,
                 responsive: [
                     {
-                        breakpoint: 768,
+                        breakpoint: 1130,
                         settings: {
                             slidesToShow: 2,
+                            centerMode: true,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
                             centerMode: true,
                         },
                     },
