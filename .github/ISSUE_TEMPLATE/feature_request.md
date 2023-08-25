@@ -1,9 +1,10 @@
 ---
-name: Feature request
+name: Feature request website
 about: Suggest an idea for the website
 title: ''
 labels: 'feature'
 assignees: ''
+project: 'website'
 
 ---
 
