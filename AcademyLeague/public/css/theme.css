@@ -14,6 +14,7 @@
     --bs-info: #415563;
     --glow-color: rgb(33, 95, 176);
     --radialgradient-color: #3e5175;
+    --background-image: url();
 }
 
 .themebgcolor {
@@ -86,6 +87,17 @@ h1 {
     padding-bottom: 0.7rem;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.corners2 {
+    clip-path:
+        polygon(0% 0%,
+            calc(100% - var(--notchSize)) 0%,
+            100% var(--notchSize),
+            100% 100%,
+            var(--notchSize) 100%,
+            0% calc(100% - var(--notchSize)));
+    border-radius: 0.5rem;
 }
 
 .glow {
@@ -199,11 +211,8 @@ a:hover {
 
 .card {
     background-color: var(--card-bg-color);
-    background: linear-gradient(150deg, #f731db, #4600f1, 100%) !important;
     height: 100%;
     width: 100%;
-    /* background: var(--banner-color);
-    background: linear-gradient(150deg, var(--banner-color) 0%, rgba(10, 31, 58, 1) 100%); */
     color: var(--bs-body-color);
     border: 0px;
     margin-bottom: 1.5rem;
@@ -223,6 +232,17 @@ a:hover {
 
 .card::-webkit-scrollbar {
     display: none;
+}
+
+.bg-image {
+    background-image: var(--background-image);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
 }
 
 .banner {
@@ -258,7 +278,7 @@ a:hover {
 .home_info {
     position: absolute;
     bottom: 0;
-    left:0;
+    left: 0;
     background:
         radial-gradient(120% 100% at top, #00000000 70%, rgba(5, 13, 29, 0.9) 0%) center/cover;
     height: 300px;
@@ -283,7 +303,7 @@ a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    min-height:100%;
+    min-height: 100%;
     width: 100%;
     padding: 2.5rem;
     z-index: 99;
@@ -331,29 +351,29 @@ a:hover {
 .home_discord_top {
     -webkit-box-shadow: inset 0px 30px 20px 0px var(--bg-color);
     box-shadow: inset 0px 30px 20px 0px var(--bg-color);
-    top:0;
-    left:0;
-    position:absolute;
+    top: 0;
+    left: 0;
+    position: absolute;
     height: 50px;
-    width:100%;
+    width: 100%;
 }
 
 .home_discord_bottom {
     -webkit-box-shadow: inset 0px -30px 20px 0px var(--bg-color);
     box-shadow: inset 0px -30px 20px 0px var(--bg-color);
-    bottom:0;
-    left:0;
-    position:absolute;
+    bottom: 0;
+    left: 0;
+    position: absolute;
     height: 50px;
-    width:100%;
+    width: 100%;
 }
 
 .home_discord_overlay {
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     background-color: rgba(5, 13, 29, 0.8);
     display: flex;
     flex-wrap: wrap;
@@ -505,43 +525,3 @@ a:hover {
 .alert {
     border-radius: 0;
 }
-
-/* \/\/ testing \/\/ */
-
-
-/* Loading wheel */
-.lds-ring {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
-  }
-  .lds-ring div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    border: 8px solid #fff;
-    border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #fff transparent transparent transparent;
-  }
-  .lds-ring div:nth-child(1) {
-    animation-delay: -0.45s;
-  }
-  .lds-ring div:nth-child(2) {
-    animation-delay: -0.3s;
-  }
-  .lds-ring div:nth-child(3) {
-    animation-delay: -0.15s;
-  }
-  @keyframes lds-ring {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
