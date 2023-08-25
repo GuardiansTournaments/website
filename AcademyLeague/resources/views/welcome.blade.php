@@ -21,7 +21,7 @@
     <!-- Games -->
     <section class="home_sponsors pb-5">
         <div class="container-fluid p-0">
-            <h1 class="text-center">Available games</h1>
+            <h1 class="text-center">Available</h1>
             <game-slider :images="{{$gameAvatars}}"></game-slider>
         </div>
     </section>
