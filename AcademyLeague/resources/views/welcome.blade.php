@@ -5,7 +5,7 @@
         <div class="container-fluid position-absolute" style="top:0; left:0;">
             @include('blocks.welcome_nav')
             <div class="row d-flex justify-content-between align-items-center" style="padding-left: 2.5rem; padding-right:2.5rem;">
-                <div class="col-lg-5 col-md-10 col-xl-4">
+                <div class="">
                     <div class="w-h1 maintext">THE PLATFORM THAT COMBINES ALL PLAYERS.</div>
                     <a href="{{route('register')}}" class="btn btn-lg btn-corner btn-info mt-5 me-5">Find out more.</a>
                     <a href="{{route('register')}}" class="btn btn-lg btn-corner btn-primary mt-5">Register Today</a>
