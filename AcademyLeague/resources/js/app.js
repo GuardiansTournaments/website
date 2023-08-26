@@ -23,6 +23,7 @@ Vue.component('overlay-discord-connect', require('./components/OverlayDiscordCon
 Vue.component('generate-bracket', require('./components/GenerateBracket.vue').default);
 Vue.component('tournament-create', require('./components/tournament/TournamentCreate.vue').default);
 Vue.component('game-slider', require('./components/sliders/GamesSlider.vue').default);
+Vue.component('info-slider', require('./components/sliders/InfoSlider.vue').default);
 Vue.component('sponsor-slider', require('./components/sliders/SponsorSlider.vue').default);
 Vue.component('user-edit', require('./components/user/UserEdit.vue').default);
 
