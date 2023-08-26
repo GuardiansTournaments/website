@@ -2,11 +2,11 @@
     --bs-body-color: #FFFFFF;
     --banner-color: rgba(10, 31, 58, 1);
     --banner-image: url('/');
-    --notchSize: 20px;
+    --notchSize: 15px;
     --card-bg-color: rgba(10, 31, 58, 1);
     --input-bg-color: rgb(15, 45, 85);
     --input-bg-color-hover: rgb(21, 62, 116);
-    --bs-font-sans-serif: "Poppins", sans-serif;
+    --bs-font-sans-serif: "Roboto", sans-serif;
     --bg-color: rgb(5, 13, 29);
     --bs-primary: #03bba9;
     --bs-secondary: #e9e8e6;
@@ -20,6 +20,10 @@
 .themebgcolor {
     background-color: var(--bg-color);
     /* background-image: linear-gradient(to top,  rgb(5, 13, 29) 0%, #09203f 100%); */
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
 }
 
 .discord-btn {
@@ -60,19 +64,28 @@ h1 {
 }
 
 .btn {
+    border-radius: 0.5rem;
+    /* padding-top: 0.7rem;
+    padding-bottom: 0.7rem; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn-corner {
     clip-path:
         polygon(0% 0%,
             calc(100% - var(--notchSize)) 0%,
             100% var(--notchSize),
             100% 100%,
-            var(--notchSize) 100%,
+            0% 100%,
             0% calc(100% - var(--notchSize)));
     border-radius: 0.5rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    /* padding-top: 0.7rem;
+    padding-bottom: 0.7rem; */
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
 
 .corners {
     clip-path:
@@ -87,6 +100,11 @@ h1 {
     padding-bottom: 0.7rem;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.round {
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
 }
 
 .corners2 {
@@ -271,10 +289,6 @@ a:hover {
         url(http://127.0.0.1:8000/storage/images/welcome/welcome_banner.png) center/cover; */
 }
 
-/* .home_info {
-    background-image: linear-gradient(to top, #09203f 0%, rgb(5, 13, 29) 30%);
-} */
-
 .home_info {
     position: absolute;
     bottom: 0;
@@ -284,6 +298,51 @@ a:hover {
     height: 300px;
     width: 100%;
 }
+
+.see-more {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 50px;
+    width: 100%;
+    z-index: 99;
+}
+
+.see-more-icon {
+    animation: MoveUpDown 1s linear infinite;
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .w-h1 {
+        font-size: 2rem !important;
+        line-height: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 1650px) {
+    .maintext {
+        width:520px;
+    }
+}
+
+.w-h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 65px;
+}
+
 
 .home_video_banner {
     object-position: center;
@@ -309,8 +368,9 @@ a:hover {
     z-index: 99;
     background-color: #050d1d;
     opacity: 0.95;
-
 }
+
+
 
 .home_banner_h2 {
     font-size: 2.5rem;
@@ -336,14 +396,15 @@ a:hover {
 
 .home_discord {
     position: relative;
-    background-image: url('/images/welcome/discord_banner.jpeg');
-    background-color: var(--bg-color);
+    /* background-image: url('/images/welcome/discord_banner.jpeg'); */
+    background-color: #000000;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
+    max-height: 500px;
     /* -webkit-box-shadow: inset 0px -60px 40px 0px var(--bg-color);
     box-shadow: inset 0px -60px 40px 0px var(--bg-color); */
 }
@@ -379,7 +440,6 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
     /* background:
         radial-gradient(100% 150% at right, #00000000 60%, rgba(5, 13, 29, 0.9) 0%) center/cover; */
 }
@@ -392,14 +452,14 @@ a:hover {
 }
 
 .home_tournaments {
-    position: relative;
     width: 100%;
-    /* background-image: url(http://127.0.0.1:8000/storage/images/welcome/welcome_banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
     background-color: var(--bg-color);
     background-image: linear-gradient(to top, rgb(5, 13, 29) 0%, #09203f 100%);
+}
+
+.home_games {
+    background-color: var(--bg-color);
+    background-image: linear-gradient(to top, #09203f 0%, rgb(5, 13, 29) 100%);
 }
 
 .section {
@@ -461,7 +521,7 @@ a:hover {
 }
 
 .container-fluid {
-    padding: 0.5 rem !important;
+    padding: 60.5 rem !important;
 }
 
 .searchform form input {

@@ -18,7 +18,7 @@ export default {
     data() {
         return {
             slickOptions: {
-                slidesToShow: 4,
+                slidesToShow: 5,
                 slidesToScroll: 3,
                 autoplay: true,
                 autoplaySpeed: 2000,
@@ -31,14 +31,14 @@ export default {
                         breakpoint: 768,
                         settings: {
                             slidesToShow: 2,
-                            centerMode: true,
+                            centerMode: false,
                         },
                     },
                     {
                         breakpoint: 576,
                         settings: {
                             slidesToShow: 1,
-                            centerMode: true,
+                            centerMode: false,
                             mobileFirst: true,
                         }
 
@@ -48,7 +48,6 @@ export default {
         };
     },
     mounted() {
-        console.log(this.images);
     }
 }
 </script>
