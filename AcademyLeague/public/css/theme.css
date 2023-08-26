@@ -331,6 +331,12 @@ a:hover {
     }
 }
 
+@media only screen and (max-width: 1650px) {
+    .maintext {
+        width:520px;
+    }
+}
+
 .w-h1 {
     font-size: 4rem;
     font-weight: bold;
