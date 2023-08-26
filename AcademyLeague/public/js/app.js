@@ -5516,7 +5516,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       slickOptions: {
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 3,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -5528,22 +5528,20 @@ __webpack_require__.r(__webpack_exports__);
           breakpoint: 768,
           settings: {
             slidesToShow: 2,
-            centerMode: true
+            centerMode: false
           }
         }, {
           breakpoint: 576,
           settings: {
             slidesToShow: 1,
-            centerMode: true,
+            centerMode: false,
             mobileFirst: true
           }
         }]
       }
     };
   },
-  mounted: function mounted() {
-    console.log(this.images);
-  }
+  mounted: function mounted() {}
 });
 
 /***/ }),
@@ -5805,21 +5803,37 @@ var render = function render() {
       options: _vm.slickOptions
     }
   }, [_c("img", {
+    staticStyle: {
+      width: "100%",
+      "max-width": "300px"
+    },
     attrs: {
       src: "/images/test/achtergrond/rocketleague.png",
       alt: ""
     }
   }), _vm._v(" "), _c("img", {
+    staticStyle: {
+      width: "100%",
+      "max-width": "300px"
+    },
     attrs: {
       src: "/images/test/achtergrond/rocketleague.png",
       alt: ""
     }
   }), _vm._v(" "), _c("img", {
+    staticStyle: {
+      width: "100%",
+      "max-width": "300px"
+    },
     attrs: {
       src: "/images/test/achtergrond/rocketleague.png",
       alt: ""
     }
   }), _vm._v(" "), _c("img", {
+    staticStyle: {
+      width: "100%",
+      "max-width": "300px"
+    },
     attrs: {
       src: "/images/test/achtergrond/rocketleague.png",
       alt: ""

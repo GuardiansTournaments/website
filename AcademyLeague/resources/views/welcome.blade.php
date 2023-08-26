@@ -71,7 +71,7 @@
 
 
     <section class="home_tournaments pt-5">
-        <div class="container">
+        <div class="p-5">
             <div class="row d-flex flex-wrap">
                 <h1 class="text-start mb-3">Tournaments</h1>
                 @foreach ($tournaments as $tournament)
@@ -116,24 +116,27 @@
         <div class="container-fluid">
             <div class="row d-flex p-5 justify-content-between">
                 <hr />
-                <div class="d-flex justify-content-between m-0 p-0">
+                <div class="d-flex justify-content-between m-0 mt-4 p-0">
                     <div class="col-lg-6 text-muted">
                         <img src="/images/favicon/favicon-32x32.png" alt="">
                         <span>© {{Carbon\Carbon::now()->year}}</span>
                         <span>{{config('app.name')}}, Inc</span>
                     </div>
                     <div class="col-lg-6 text-end">
-                        <a href="">
-                            <i class="bi bi-instagram h5 ms-2"></i>
+                        <a href="https://www.instagram.com/guardianstournaments/">
+                            <i class="bi bi-instagram h5 ms-2" target="_blank"></i>
                         </a>
-                        <a href="">
-                            <i class="bi bi-tiktok h5 ms-2"></i>
+                        <a href="https://www.tiktok.com/@guardianstournaments?lang=nl-NL">
+                            <i class="bi bi-tiktok h5 ms-2" target="_blank"></i>
                         </a>
-                        <a href="">
-                            <i class="bi bi-twitter h5 ms-2"></i>
+                        <a href="https://twitter.com/GTRocketleague">
+                            <i class="bi bi-twitter h5 ms-2" target="_blank"></i>
                         </a>
-                        <a href="">
+                        <a href="https://discord.com/invite/NCxjv68pku" target="_blank">
                             <i class="bi bi-discord h5 ms-2"></i>
+                        </a>
+                        <a href="https://www.twitch.tv/guardianstournaments">
+                            <i class="bi bi-twitch h5 ms-2" target="_blank"></i>
                         </a>
                     </div>
                 </div>
