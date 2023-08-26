@@ -2,11 +2,11 @@
     --bs-body-color: #FFFFFF;
     --banner-color: rgba(10, 31, 58, 1);
     --banner-image: url('/');
-    --notchSize: 20px;
+    --notchSize: 15px;
     --card-bg-color: rgba(10, 31, 58, 1);
     --input-bg-color: rgb(15, 45, 85);
     --input-bg-color-hover: rgb(21, 62, 116);
-    --bs-font-sans-serif: "Poppins", sans-serif;
+    --bs-font-sans-serif: "Roboto", sans-serif;
     --bg-color: rgb(5, 13, 29);
     --bs-primary: #03bba9;
     --bs-secondary: #e9e8e6;
@@ -20,6 +20,10 @@
 .themebgcolor {
     background-color: var(--bg-color);
     /* background-image: linear-gradient(to top,  rgb(5, 13, 29) 0%, #09203f 100%); */
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
 }
 
 .discord-btn {
@@ -60,19 +64,28 @@ h1 {
 }
 
 .btn {
+    border-radius: 0.5rem;
+    /* padding-top: 0.7rem;
+    padding-bottom: 0.7rem; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn-corner {
     clip-path:
         polygon(0% 0%,
             calc(100% - var(--notchSize)) 0%,
             100% var(--notchSize),
             100% 100%,
-            var(--notchSize) 100%,
+            0% 100%,
             0% calc(100% - var(--notchSize)));
     border-radius: 0.5rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    /* padding-top: 0.7rem;
+    padding-bottom: 0.7rem; */
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
 
 .corners {
     clip-path:
@@ -87,6 +100,11 @@ h1 {
     padding-bottom: 0.7rem;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.round {
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
 }
 
 .corners2 {
@@ -285,6 +303,12 @@ a:hover {
     width: 100%;
 }
 
+.w-h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 65px;
+}
+
 .home_video_banner {
     object-position: center;
     /* Causes video to be centred against the header */
@@ -336,14 +360,15 @@ a:hover {
 
 .home_discord {
     position: relative;
-    background-image: url('/images/welcome/discord_banner.jpeg');
-    background-color: var(--bg-color);
+    /* background-image: url('/images/welcome/discord_banner.jpeg'); */
+    background-color: #000000;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
+    max-height: 500px;
     /* -webkit-box-shadow: inset 0px -60px 40px 0px var(--bg-color);
     box-shadow: inset 0px -60px 40px 0px var(--bg-color); */
 }
