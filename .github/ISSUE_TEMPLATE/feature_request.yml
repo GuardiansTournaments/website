@@ -2,14 +2,14 @@ name: Feature request
 description: Describe the feature by giving answer to the following questions
 title: "[Feature]: "
 labels: ["feature"]
-projects: ["website"]
+projects: ["guardianstournaments/1"]
 assignees:
   - joeryvanegmond
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Please fill in the input fields to describe your requested feature.
   - type: input
     id: as-a
     attributes:
