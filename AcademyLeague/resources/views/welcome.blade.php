@@ -5,16 +5,18 @@
         <div class="container-fluid position-absolute" style="top:0; left:0;">
             @include('blocks.welcome_nav')
             <div class="row d-flex justify-content-between align-items-center" style="padding-left: 2.5rem; padding-right:2.5rem;">
-                <div class="col-lg-5 col-md-10">
+                <div class="col-lg-5 col-md-10 col-xl-4">
                     <div class="w-h1">THE PLATFORM THAT COMBINES ALL PLAYERS.</div>
                     <a href="{{route('register')}}" class="btn btn-lg btn-corner btn-info mt-5 me-5">Find out more.</a>
                     <a href="{{route('register')}}" class="btn btn-lg btn-corner btn-primary mt-5">Register Today</a>
                 </div>
             </div>
         </div>
+
         <!-- <div class="see-more">
             <i class="bi bi-arrow-down see-more-icon"></i>
         </div> -->
+
         <div class="home_discord_bottom">
         </div>
         <div class="home_info">
@@ -30,9 +32,34 @@
         </div>
     </section>
 
+     <section class="home_discord">
+        <div class="container">
+            <div class="home_discord_overlay">
+                <div class="corners p-5" style="width:370px;">
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img class="nav-avatar-game text-center" src="https://cdn.discordapp.com/icons/1106117930825027624/a_3522fe0da744e0e8f7e756402c80a179.gif?size=128" width="100" alt="">
+                        </div>
+                        <h5 class="home_banner_h5 text-center">Guardians Tournaments</h5>
+                        <p class="text-center">The Guardians Tournament Discord server gives players a change to compete against each other on a new level.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://discord.com/invite/NCxjv68pku" target="_blank" class="btn discord-btn d-flex justify-content-center align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-discord mt-2 h4"></i>
+                                    <span class="ms-2 me-1">Discord server</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Games -->
     <section class="home_games pb-5 overflow-hidden">
-        <div class="container">
+        <div class="p-5">
             <div class="row">
                 <h1 class="m-0">Games</h1>
             </div>
@@ -71,7 +98,7 @@
 
 
     <section class="home_tournaments pt-5">
-        <div class="container">
+        <div class="p-5">
             <div class="row d-flex flex-wrap">
                 <h1 class="text-start mb-3">Tournaments</h1>
                 @foreach ($tournaments as $tournament)
@@ -114,7 +141,7 @@
 
     <footer>
         <div class="container-fluid">
-            <div class="row d-flex p-5 justify-content-between">
+            <div class="row d-flex p-5 justify-content-between opacity:0.5;">
                 <hr />
                 <div class="d-flex justify-content-between m-0 p-0">
                     <div class="col-lg-6 text-muted">

@@ -5516,7 +5516,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       slickOptions: {
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 3,
         autoplay: true,
         autoplaySpeed: 2000,
