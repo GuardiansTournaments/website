@@ -5,13 +5,16 @@
         <div class="container-fluid position-absolute" style="top:0; left:0;">
             @include('blocks.welcome_nav')
             <div class="row d-flex justify-content-between align-items-center" style="padding-left: 2.5rem; padding-right:2.5rem;">
-                <div class="col-lg-4">
+                <div class="col-lg-5 col-md-10">
                     <div class="w-h1">THE PLATFORM THAT COMBINES ALL PLAYERS.</div>
                     <a href="{{route('register')}}" class="btn btn-lg btn-corner btn-info mt-5 me-5">Find out more.</a>
                     <a href="{{route('register')}}" class="btn btn-lg btn-corner btn-primary mt-5">Register Today</a>
                 </div>
             </div>
         </div>
+        <!-- <div class="see-more">
+            <i class="bi bi-arrow-down see-more-icon"></i>
+        </div> -->
         <div class="home_discord_bottom">
         </div>
         <div class="home_info">
@@ -19,75 +22,31 @@
     </section>
 
     <!-- Intro info -->
-    <section class="pb-5">
-
-        <div class="container p-0">
-            <div class="row d-flex justify-content-around">
-                <div class="col-lg-3 d-flex flex-column">
-                    <div class="text-center w-h1 mb-3">
-                        <i class="bi bi-trophy"></i>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="h5 bold text-center">Tournaments</div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="text-center" style="width:250;">Join and play with friends.</div>
-                    </div>
-                </div>
-
-                <!-- Matchmaking -->
-                <div class="col-lg-3 d-flex flex-column">
-                    <div class="text-center w-h1 mb-3">
-                       <i class="bi bi-search"></i>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="h5 bold text-center">Matchmaking</div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="text-center" style="width:250;">Pre-game training matches.</div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 d-flex flex-column">
-                    <div class="text-center w-h1 mb-3">
-                        <i class="bi bi-award"></i>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="h5 bold text-center">Competition</div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="text-center" style="width:250;">Contest to be number one.</div>
-                    </div>
-                </div>
-                <div class="col-lg-3 d-flex flex-column">
-                    <div class="text-center w-h1 mb-3">
-                        <i class="bi bi-people"></i>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="h5 bold text-center">Community</div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="text-center" style="width:250;">Reach out to other players.</div>
-                    </div>
-                </div>
+    <section class="pb-5 overflow-hidden pt-2">
+        <div class="container-fluid p-0">
+            <div class="row pb-5">
+                <info-slider></info-slider>
             </div>
         </div>
     </section>
 
     <!-- Games -->
-    <section class=" pb-5">
+    <section class="home_games pb-5 overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <h1 class="m-0">Games</h1>
+            </div>
+        </div>
         <div class="container-fluid p-0">
-            <h1 class="text-start p-5">Available games</h1>
-            <game-slider></game-slider>
+            <div class="row">
+                <game-slider></game-slider>
+            </div>
         </div>
     </section>
 
     <!-- Discord server info -->
     <section class="home_discord">
         <div class="container">
-            <!-- top shadow inset -->
-            <!-- <div class="home_discord_top">
-            </div> -->
             <div class="home_discord_overlay">
                 <div class="corners p-5" style="width:370px;">
                     <div class="d-flex flex-column justify-content-center">
@@ -107,24 +66,14 @@
                     </div>
                 </div>
             </div>
-
-            <!-- text content -->
-            <!-- <div class="home_discord_bottom">
-
-            </div> -->
-
-            <!-- down shadow inset -->
-            <!-- <div class="row d-flex home_discord_bottom">
-
-            </div> -->
         </div>
     </section>
 
-    <section class="home_tournaments">
+
+    <section class="home_tournaments pt-5">
         <div class="container">
-            <!-- <div class="home_discord_top">
-            </div> -->
-            <div class="row d-flex flex-wrap mt-5 justify-content-start">
+            <div class="row d-flex flex-wrap">
+                <h1 class="text-start mb-3">Tournaments</h1>
                 @foreach ($tournaments as $tournament)
                 <a href="{{route('tournament.show',$tournament->id)}}" class="col-md-3 mb-4">
                     <div class="card" style="min-height:250px">
@@ -158,10 +107,38 @@
 
     <!-- Sponsors -->
     <section>
-        <!-- <games-slider :images="{{$gameAvatars}}"></games-slider> -->
         <div class="container-fluid">
             <sponsor-slider :images="{{$sponsors}}"></sponsor-slider>
         </div>
     </section>
-</div>
 
+    <footer>
+        <div class="container-fluid">
+            <div class="row d-flex p-5 justify-content-between">
+                <hr />
+                <div class="d-flex justify-content-between m-0 p-0">
+                    <div class="col-lg-6 text-muted">
+                        <img src="/images/favicon/favicon-32x32.png" alt="">
+                        <span>© {{Carbon\Carbon::now()->year}}</span>
+                        <span>{{config('app.name')}}, Inc</span>
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        <a href="">
+                            <i class="bi bi-instagram h5 ms-2"></i>
+                        </a>
+                        <a href="">
+                            <i class="bi bi-tiktok h5 ms-2"></i>
+                        </a>
+                        <a href="">
+                            <i class="bi bi-twitter h5 ms-2"></i>
+                        </a>
+                        <a href="">
+                            <i class="bi bi-discord h5 ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>

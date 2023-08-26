@@ -289,10 +289,6 @@ a:hover {
         url(http://127.0.0.1:8000/storage/images/welcome/welcome_banner.png) center/cover; */
 }
 
-/* .home_info {
-    background-image: linear-gradient(to top, #09203f 0%, rgb(5, 13, 29) 30%);
-} */
-
 .home_info {
     position: absolute;
     bottom: 0;
@@ -303,11 +299,41 @@ a:hover {
     width: 100%;
 }
 
+.see-more {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height:50px;
+    width:100%;
+    z-index: 99;
+}
+
+.see-more-icon {
+    animation: MoveUpDown 1s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 100px;
+    }
+  }
+
+@media only screen and (max-width: 575px) {
+    .w-h1 {
+        font-size: 2rem !important;
+        line-height: 40px !important;
+    }
+}
+
 .w-h1 {
     font-size: 4rem;
     font-weight: bold;
     line-height: 65px;
 }
+
 
 .home_video_banner {
     object-position: center;
@@ -333,8 +359,9 @@ a:hover {
     z-index: 99;
     background-color: #050d1d;
     opacity: 0.95;
-
 }
+
+
 
 .home_banner_h2 {
     font-size: 2.5rem;
@@ -404,7 +431,6 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
     /* background:
         radial-gradient(100% 150% at right, #00000000 60%, rgba(5, 13, 29, 0.9) 0%) center/cover; */
 }
@@ -417,14 +443,14 @@ a:hover {
 }
 
 .home_tournaments {
-    position: relative;
     width: 100%;
-    /* background-image: url(http://127.0.0.1:8000/storage/images/welcome/welcome_banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
     background-color: var(--bg-color);
     background-image: linear-gradient(to top, rgb(5, 13, 29) 0%, #09203f 100%);
+}
+
+.home_games {
+    background-color: var(--bg-color);
+    background-image: linear-gradient(to top, #09203f 0%, rgb(5, 13, 29) 100%);
 }
 
 .section {

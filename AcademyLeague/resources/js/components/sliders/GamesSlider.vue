@@ -1,32 +1,9 @@
 <template>
-    <slick ref="slick" class="autoplay" :options="slickOptions" style="max-height:400px;">
-
-        <div class="position-relative game-slide">
-            <img src="/images/test/achtergrond/rocketleague.png" class="" style="max-width:325px; width:100%;" alt="">
-            <img src="/images/test/gameitems/rocketleague.png" class="position-absolute"
-                style="top:0; left:0; max-width:326px; width:100%;" alt="">
-        </div>
-
-
-        <div class="position-relative game-slide">
-            <img src="/images/test/achtergrond/csgo.png" class="" style="max-width:325px; width:100%;" alt="">
-            <img src="/images/test/gameitems/csgo.png" class="position-absolute" style="top:0; left:0; max-width:326px; width:100%;"
-                alt="">
-        </div>
-
-
-        <div class="position-relative game-slide">
-            <img src="/images/test/achtergrond/league.png" class="" style="max-width:325px; width:100%;" alt="">
-            <img src="/images/test/gameitems/league.png" class="position-absolute" style="top:0; left:0; max-width:326px; width:100%;"
-                alt="">
-        </div>
-
-        <div class="position-relative game-slide">
-            <img src="/images/test/achtergrond/valorant.png" class="" style="max-width:325px; width:100%;" alt="">
-            <img src="/images/test/gameitems/valorant.png" class="position-absolute" style="top:0; left:0; max-width:326px; width:100%;"
-                alt="">
-        </div>
-
+    <slick ref="slick" class="autoplay" :options="slickOptions" style="max-height:500px;">
+        <img src="/images/test/achtergrond/rocketleague.png" alt="">
+        <img src="/images/test/achtergrond/rocketleague.png" alt="">
+        <img src="/images/test/achtergrond/rocketleague.png" alt="">
+        <img src="/images/test/achtergrond/rocketleague.png" alt="">        
     </slick>
 </template>
 
@@ -42,9 +19,9 @@ export default {
     data() {
         return {
             slickOptions: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                autoplay: true,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                autoplay: false,
                 autoplaySpeed: 2000,
                 accessibility: false,
                 arrows: false,

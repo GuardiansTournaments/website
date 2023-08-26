@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
+    <div class="container-fluid mt-5 mb-5">
         <div class="col-md-2 d-flex justify-content-center">
             <a class="navbar-brand" href="{{ route('home') }}">
-                <img src="{{URL::asset('img/Blue_title_trans.png')}}" width="180rem" alt="logo">
+                <img src="{{URL::asset('img/logo.png')}}" width="180rem" alt="logo">
             </a>
         </div>
 
