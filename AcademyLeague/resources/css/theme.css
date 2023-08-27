@@ -102,6 +102,21 @@ h1 {
     padding-right: 2rem;
 }
 
+.corners-np {
+    clip-path:
+        polygon(0% 0%,
+            calc(100% - var(--notchSize)) 0%,
+            100% var(--notchSize),
+            100% 100%,
+            var(--notchSize) 100%,
+            0% calc(100% - var(--notchSize)));
+    border-radius: 0.5rem;
+}
+
+.round-np {
+    border-radius: 0.5rem;
+}
+
 .round {
     border-radius: 0.5rem;
     padding: 0.2rem 1rem;
@@ -401,7 +416,7 @@ a:hover {
 
 .home_discord {
     position: relative;
-    /* background-image: url('/images/welcome/discord_banner.jpeg'); */
+    background-image: url('/images/welcome/discord_banner.jpeg');
     background-color: #000000;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -410,8 +425,11 @@ a:hover {
     height: 100%;
     width: 100%;
     max-height: 500px;
-    /* -webkit-box-shadow: inset 0px -60px 40px 0px var(--bg-color);
-    box-shadow: inset 0px -60px 40px 0px var(--bg-color); */
+}
+
+.home_about {
+    height: 100%;
+    width: 100%;
 }
 
 .home_discord_top {
@@ -465,6 +483,7 @@ a:hover {
 .home_games {
     background-color: var(--bg-color);
     background-image: linear-gradient(to top, #09203f 0%, rgb(5, 13, 29) 100%);
+    padding-bottom: 8rem;
 }
 
 .section {

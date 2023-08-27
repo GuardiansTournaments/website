@@ -32,25 +32,16 @@
         </div>
     </section>
 
-     <section class="home_discord">
-        <div class="container">
-            <div class="home_discord_overlay">
-                <div class="corners p-5" style="width:370px;">
-                    <div class="d-flex flex-column justify-content-center">
-                        <div class="d-flex justify-content-center mb-4">
-                            <img class="nav-avatar-game text-center" src="https://cdn.discordapp.com/icons/1106117930825027624/a_3522fe0da744e0e8f7e756402c80a179.gif?size=128" width="100" alt="">
-                        </div>
-                        <h5 class="home_banner_h5 text-center">Guardians Tournaments</h5>
-                        <p class="text-center">The Guardians Tournament Discord server gives players a change to compete against each other on a new level.</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://discord.com/invite/NCxjv68pku" target="_blank" class="btn discord-btn d-flex justify-content-center align-items-center">
-                                <div class="d-flex align-items-center">
-                                    <i class="bi bi-discord mt-2 h4"></i>
-                                    <span class="ms-2 me-1">Discord server</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+
+    <!-- About -->
+     <section class="home_about">
+        <div class="container h-100">
+            <div class="row d-flex flex-wrap justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://guardianstournaments.gg/img/about-img1.png" class="w-100 corners-np" alt="">
+                </div>
+                <div class="col-lg-6 p-5">
+                    <p class="text-justify w-75 h1">Central hub for organizing, scheduling, and facilitating tournaments.</p>
                 </div>
             </div>
         </div>
@@ -58,7 +49,7 @@
 
 
     <!-- Games -->
-    <section class="home_games pb-5 overflow-hidden">
+    <section class="home_games overflow-hidden">
         <div class="p-5">
             <div class="row">
                 <h1 class="m-0">Games</h1>
@@ -71,11 +62,27 @@
         </div>
     </section>
 
+    <!-- About -->
+    <section class="home_about">
+        <div class="container h-100">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-lg-6 p-5">
+                    <p class="text-end w-75 h1">Bring players together, fostering a sense of community and camaraderie.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://guardianstournaments.gg/img/about-img2.png" class="w-100 corners-np" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Discord server info -->
     <section class="home_discord">
         <div class="container">
+            <div class="home_discord_top">
+            </div>
             <div class="home_discord_overlay">
-                <div class="corners p-5" style="width:370px;">
+                <div class="p-5" style="width:370px;">
                     <div class="d-flex flex-column justify-content-center">
                         <div class="d-flex justify-content-center mb-4">
                             <img class="nav-avatar-game text-center" src="https://cdn.discordapp.com/icons/1106117930825027624/a_3522fe0da744e0e8f7e756402c80a179.gif?size=128" width="100" alt="">
@@ -92,6 +99,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="home_discord_bottom">
             </div>
         </div>
     </section>
@@ -141,34 +150,60 @@
 
     <footer>
         <div class="container-fluid">
-            <div class="row d-flex p-5 justify-content-between opacity:0.5;">
-                <hr />
-                <div class="d-flex justify-content-between m-0 mt-4 p-0">
-                    <div class="col-lg-6 text-muted">
-                        <img src="/images/favicon/favicon-32x32.png" alt="">
+            <div class="row d-flex flex-column justify-content-center">
+                <hr/>
+                <div class="col-lg-12 text-center mt-3 mb-3">
+                    <img src="/images/favicon/favicon-32x32.png" alt="">
+                </div>
+                <div class="col-lg-12 text-center mb-3">
                         <span>© {{Carbon\Carbon::now()->year}}</span>
-                        <span>{{config('app.name')}}, Inc</span>
+                        <span>{{config('app.name')}}</span>
                     </div>
-                    <div class="col-lg-6 text-end">
-                        <a href="https://www.instagram.com/guardianstournaments/">
-                            <i class="bi bi-instagram h5 ms-2" target="_blank"></i>
+                    <div class="col-lg-12 text-center mb-3 text-white">
+                        <a href="https://www.instagram.com/guardianstournaments/" target="_blank">
+                            <i class="bi bi-instagram h5 ms-2"></i>
                         </a>
-                        <a href="https://www.tiktok.com/@guardianstournaments?lang=nl-NL">
-                            <i class="bi bi-tiktok h5 ms-2" target="_blank"></i>
+                        <a href="https://www.tiktok.com/@guardianstournaments?lang=nl-NL" target="_blank">
+                            <i class="bi bi-tiktok h5 ms-2"></i>
                         </a>
-                        <a href="https://twitter.com/GTRocketleague">
-                            <i class="bi bi-twitter h5 ms-2" target="_blank"></i>
+                        <a href="https://twitter.com/GTRocketleague" target="_blank">
+                            <i class="bi bi-twitter h5 ms-2"></i>
                         </a>
                         <a href="https://discord.com/invite/NCxjv68pku" target="_blank">
                             <i class="bi bi-discord h5 ms-2"></i>
                         </a>
-                        <a href="https://www.twitch.tv/guardianstournaments">
-                            <i class="bi bi-twitch h5 ms-2" target="_blank"></i>
+                        <a href="https://www.twitch.tv/guardianstournaments" target="_blank">
+                            <i class="bi bi-twitch h5 ms-2"></i>
                         </a>
                     </div>
-                </div>
             </div>
         </div>
     </footer>
+
+    <!-- <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <img src="/images/favicon/favicon-32x32.png" alt="">
+        <span>© {{Carbon\Carbon::now()->year}}</span>
+        <span>{{config('app.name')}}, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <a href="https://www.instagram.com/guardianstournaments/" target="_blank">
+            <i class="bi bi-instagram h5 ms-2"></i>
+        </a>
+        <a href="https://www.tiktok.com/@guardianstournaments?lang=nl-NL" target="_blank">
+            <i class="bi bi-tiktok h5 ms-2"></i>
+        </a>
+        <a href="https://twitter.com/GTRocketleague" target="_blank">
+            <i class="bi bi-twitter h5 ms-2"></i>
+        </a>
+        <a href="https://discord.com/invite/NCxjv68pku" target="_blank">
+            <i class="bi bi-discord h5 ms-2"></i>
+        </a>
+        <a href="https://www.twitch.tv/guardianstournaments" target="_blank">
+            <i class="bi bi-twitch h5 ms-2"></i>
+        </a>
+    </ul>
+  </footer> -->
 
 </div>

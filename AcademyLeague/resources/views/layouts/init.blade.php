@@ -14,7 +14,7 @@
         <link href="{{ asset('css/theme.css') }}" rel="stylesheet" />
 
         <!-- Scripts -->
-        <script src="{{ asset('/js/app.js') }}" defer></script>
+        <script src="{{ asset('/js/app.js') }}" async defer></script>
 
         <!-- Favicon -->
         <link
