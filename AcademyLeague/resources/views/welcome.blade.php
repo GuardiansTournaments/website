@@ -7,8 +7,8 @@
             <div class="row d-flex justify-content-between align-items-center" style="padding-left: 2.5rem; padding-right:2.5rem;">
                 <div class="">
                     <div class="w-h1 maintext">THE PLATFORM THAT COMBINES ALL PLAYERS.</div>
-                    <a href="{{route('register')}}" class="btn btn-lg btn-corner btn-info mt-5 me-5 bold">Find out more.</a>
-                    <a href="{{route('register')}}" class="btn btn-lg btn-corner btn-primary mt-5 bold">Register Today</a>
+                    <a href="{{route('register')}}" class="btn btn-lg btn-corner btn-info mt-5 me-5">Find out more.</a>
+                    <a href="{{route('register')}}" class="btn btn-lg btn-corner btn-primary mt-5">Register Today</a>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
     <section class="home_games overflow-hidden pt-5">
         <div class="pt-5 ps-5">
             <div class="row">
-                <h1 class="m-0 h1">Games</h1>
+                <h1 class="m-0 h1 pb-4">Games</h1>
             </div>
         </div>
         <div class="container-fluid p-0">
