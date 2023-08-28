@@ -1,16 +1,16 @@
 <template>
     <slick ref="slick" class="autoplay" :options="slickOptions" style="max-height:500px;">
         <div class="col-lg-4">
-            <img src="/images/test/achtergrond/rocketleague.png" style="width:100%; max-width:300px;" alt="">
+            <img src="https://media.discordapp.net/attachments/936029286610137179/1145817478975455343/Rocket.png?width=822&height=1056" style="width:100%; max-width:300px;" alt="">
         </div>
         <div class="col-lg-4">
-            <img src="/images/test/achtergrond/rocketleague.png" style="width:100%; max-width:300px;" alt="">
+            <img src="https://media.discordapp.net/attachments/936029286610137179/1145812688346292326/csgo.png?width=822&height=1056" style="width:100%; max-width:300px;" alt="">
         </div>
         <div class="col-lg-4">
-            <img src="/images/test/achtergrond/rocketleague.png" style="width:100%; max-width:300px;" alt="">
+            <img src="https://media.discordapp.net/attachments/936029286610137179/1145812688719593692/league.png?width=822&height=1056" style="width:100%; max-width:300px;" alt="">
         </div>
         <div class="col-lg-4">
-            <img src="/images/test/achtergrond/rocketleague.png" style="width:100%; max-width:300px;" alt="">
+            <img src="https://media.discordapp.net/attachments/936029286610137179/1145812687750692935/valorant.png?width=822&height=1056" style="width:100%; max-width:300px;" alt="">
         </div>
     </slick>
 </template>
