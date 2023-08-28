@@ -44,7 +44,7 @@
                             </div>
 
                             <div class="form-group mb-3">
-                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <button type="submit" class="btn btn-primary w-100">
                                     {{ __('Login') }}
                                 </button>
                             </div>
@@ -52,7 +52,7 @@
                             <hr />
 
                             <div class="form-group mb-3">
-                                <a href="{{route('discord.login')}}" class="btn discord-btn btn-lg w-100">
+                                <a href="{{route('discord.login')}}" class="btn discord-btn w-100">
                                     <i class="bi bi-discord"></i>
                                     <span>Login with Discord</span>
                                 </a>

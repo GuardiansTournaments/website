@@ -67,13 +67,13 @@
                             </div>
 
                             <div class="form-group mb-3 d-flex justify-content-center mb-2">
-                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <button type="submit" class="btn btn-primary w-100">
                                     {{ __('Create account') }}
                                 </button>
                             </div>
                                 <hr />
                                 <div class="col-md-12 d-flex justify-content-center text-decoration-none">
-                                    <a href="/sign-in/discord" class="btn discord-btn btn-lg w-100">
+                                    <a href="/sign-in/discord" class="btn discord-btn w-100">
                                     <i class="bi bi-discord"></i>
                                         <span>Register with Discord</span>
                                     </a>
