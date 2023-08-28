@@ -33,6 +33,21 @@
     </section>
 
 
+    <!-- Games -->
+    <section class="home_games overflow-hidden pt-5">
+        <div class="pt-5 ps-5">
+            <div class="row">
+                <h1 class="m-0 h1">Games</h1>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="row">
+                <game-slider></game-slider>
+            </div>
+        </div>
+    </section>
+
+
     <!-- About -->
     <section class="home_about1">
         <div class="container d-flex justify-content-center">
@@ -41,7 +56,8 @@
                     <img src="https://guardianstournaments.gg/img/about-img1.png" class="w-100 corners-np" alt="">
                 </div>
                 <div class="col-lg-6 p-5">
-                    <div class="text-start w-h2" style="z-index:99;">Organize tournaments.</div>
+                    <div class="text-start h1" style="z-index:99;">What do we offer players</div>
+                    <p class="">Our tournament Discord server is an exclusive online platform designed for participants to come together and take part in competitive gaming events. It acts as a central hub for organizing, scheduling, and facilitating tournaments across a wide range of games. With dedicated text and voice channels, players can easily communicate, create teams, share updates, and coordinate matches. The server offers a centralized space for players to connect, compete, and foster a strong sense of community within the gaming tournament scene.</p>
                 </div>
             </div>
         </div>
@@ -74,28 +90,15 @@
             <div class="home_discord_bottom">
             </div>
         </div>
-    </section>
-
-    <!-- Games -->
-    <section class="home_games overflow-hidden">
-        <div class="p-5">
-            <div class="row">
-                <h1 class="m-0 w-h2">Games</h1>
-            </div>
-        </div>
-        <div class="container-fluid p-0">
-            <div class="row">
-                <game-slider></game-slider>
-            </div>
-        </div>
-    </section>
+</section>
 
     <!-- About -->
     <section class="home_about2">
         <div class="container">
             <div class="row d-flex justify-content-between align-items-center">
                 <div class="col-lg-6 p-5">
-                    <p class="text-end w-h2">Bring players together.</p>
+                    <p class="text-start h1">What is our future vision?</p>
+                    <p>At Guardians Tournaments, we're on a mission to bring players together, fostering a sense of community and camaraderie. Our inclusive LAN and online tournaments provide an exciting platform where everyone can participate and thrive. Join us for an unforgettable esports experience that celebrates diversity and collective success.</p>
                 </div>
                 <div class="col-lg-6 glow">
                     <img src="https://guardianstournaments.gg/img/about-img2.png" class="w-100 corners-np" alt="">
@@ -108,7 +111,7 @@
     <section class="home_tournaments pt-5">
         <div class="p-5">
             <div class="row d-flex flex-wrap">
-                <h1 class="text-start pb-5 w-h2">Tournaments</h1>
+                <h1 class="text-start pb-3 h1">Tournaments</h1>
                 @foreach ($tournaments as $tournament)
                 <a href="{{route('tournament.show',$tournament->id)}}" class="col-md-3 mb-4">
                     <div class="card" style="min-height:250px">
