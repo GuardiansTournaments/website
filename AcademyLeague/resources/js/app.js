@@ -28,6 +28,7 @@ Vue.component('game-slider', require('./components/sliders/GamesSlider.vue').def
 Vue.component('info-slider', require('./components/sliders/InfoSlider.vue').default);
 Vue.component('sponsor-slider', require('./components/sliders/SponsorSlider.vue').default);
 Vue.component('user-edit', require('./components/user/UserEdit.vue').default);
+Vue.component('arrow-bottom', require('./components/animations/ArrowBottom.vue').default);
 
 
 /**

@@ -1,9 +1,17 @@
 <template>
     <slick ref="slick" class="autoplay" :options="slickOptions" style="max-height:500px;">
-        <img src="/images/test/achtergrond/rocketleague.png" style="width:100%; max-width:300px;" alt="">
-        <img src="/images/test/achtergrond/rocketleague.png" style="width:100%; max-width:300px;" alt="">
-        <img src="/images/test/achtergrond/rocketleague.png" style="width:100%; max-width:300px;" alt="">
-        <img src="/images/test/achtergrond/rocketleague.png" style="width:100%; max-width:300px;" alt="">        
+        <div class="col-lg-4">
+            <img src="/images/test/achtergrond/rocketleague.png" style="width:100%; max-width:300px;" alt="">
+        </div>
+        <div class="col-lg-4">
+            <img src="/images/test/achtergrond/rocketleague.png" style="width:100%; max-width:300px;" alt="">
+        </div>
+        <div class="col-lg-4">
+            <img src="/images/test/achtergrond/rocketleague.png" style="width:100%; max-width:300px;" alt="">
+        </div>
+        <div class="col-lg-4">
+            <img src="/images/test/achtergrond/rocketleague.png" style="width:100%; max-width:300px;" alt="">
+        </div>
     </slick>
 </template>
 

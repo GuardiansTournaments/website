@@ -319,7 +319,6 @@ a:hover {
     bottom: 0;
     left: 50%;
     height: 50px;
-    width: 100%;
     z-index: 99;
 }
 
@@ -344,15 +343,16 @@ a:hover {
         font-size: 2rem !important;
         line-height: 40px !important;
     }
+
     .maintext {
-        width:100%;
+        width: 100%;
     }
 }
 
 @media only screen and (min-width: 575px) {
     .maintext {
-        width:100%;
-        max-width:550px;
+        width: 100%;
+        max-width: 550px;
     }
 }
 
@@ -360,6 +360,13 @@ a:hover {
     font-size: 4rem;
     font-weight: bold;
     line-height: 65px;
+    font-family: 'Poppins';
+}
+
+.w-h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 60px;
     font-family: 'Poppins';
 }
 
@@ -403,17 +410,6 @@ a:hover {
     font-weight: bold;
 }
 
-.home_games {
-    position: relative;
-    width: 100%;
-    /* background-image: url(http://127.0.0.1:8000/storage/images/welcome/welcome_banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-    background-color: var(--bg-color);
-    background-image: linear-gradient(to top, rgb(5, 13, 29) 0%, #09203f 100%);
-}
-
 .home_discord {
     position: relative;
     background-image: url('/images/welcome/discord_banner.jpeg');
@@ -427,9 +423,17 @@ a:hover {
     max-height: 500px;
 }
 
-.home_about {
-    height: 100%;
+.home_about1 {
     width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.home_about2 {
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    /* background-image: linear-gradient(to top, rgb(5, 13, 29) 0%, #09203f 100%); */
 }
 
 .home_discord_top {
@@ -477,12 +481,12 @@ a:hover {
 .home_tournaments {
     width: 100%;
     background-color: var(--bg-color);
-    background-image: linear-gradient(to top, rgb(5, 13, 29) 0%, #09203f 100%);
+    /* background-image: linear-gradient(to top, rgb(5, 13, 29) 0%, #09203f 100%); */
 }
 
 .home_games {
     background-color: var(--bg-color);
-    background-image: linear-gradient(to top, #09203f 0%, rgb(5, 13, 29) 100%);
+    /* background-image: linear-gradient(to top, #09203f 0%, rgb(5, 13, 29) 100%); */
     padding-bottom: 8rem;
 }
 
@@ -608,4 +612,93 @@ a:hover {
 
 .alert {
     border-radius: 0;
+}
+
+
+/* bart */
+.arrow {
+    position: absolute;
+    top: 0;
+    /* Adjusted value for desktop */
+    left: 50%;
+    rotate: -90deg;
+    transform: translate(-50%, -50%) rotate(90deg);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 1vw;
+    height: 1vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .arrow {
+        top: 0;
+        left: 53%;
+        /* Adjusted value for mobile */
+        /* transform: translate(-50%, -50%) rotate(90deg) scale(1.5); */
+        /* Rotate and increase scale for mobile */
+    }
+
+    .arrow span {
+        width: 2vw;
+        /* Increase width for mobile */
+        height: 2vw;
+        /* Increase height for mobile */
+        transform: rotate(45deg);
+        /* Keep the rotation for the arrow span */
+    }
+
+    .footer-icons {
+        justify-content: center !important;
+        padding-top: 1rem;
+    }
+
+    .footer-text {
+        justify-content: center;
+    }
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+/* Your CSS code for .arrow and its animations */
+
+/* Add a class to indicate the arrow is clickable */
+.arrow.clickable {
+    cursor: pointer;
+}
+
+/* Add this style to show that the arrow is clickable */
+.arrow.clickable span {
+    border-color: white;
+    transition: border-color 0.3s ease;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
 }
