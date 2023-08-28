@@ -1,16 +1,24 @@
 <template>
     <slick ref="slick" class="autoplay" :options="slickOptions" style="max-height:500px;">
         <div class="col-lg-4">
-            <img src="https://media.discordapp.net/attachments/936029286610137179/1145817478975455343/Rocket.png?width=822&height=1056" style="width:100%; max-width:300px;" alt="">
+            <div class="game-slider">
+                <img src="https://cdn.discordapp.com/attachments/1082603510421528626/1145839300894789735/csgo.png?width=822&height=1056" style="width:100%; max-width:300px;" alt="">
+            </div>
         </div>
         <div class="col-lg-4">
-            <img src="https://media.discordapp.net/attachments/936029286610137179/1145812688346292326/csgo.png?width=822&height=1056" style="width:100%; max-width:300px;" alt="">
+            <div class="game-slider">
+                <img src="https://cdn.discordapp.com/attachments/1082603510421528626/1145839301372948590/league.png?width=822&height=1056" style="width:100%; max-width:300px;" alt="">
+            </div>
         </div>
         <div class="col-lg-4">
-            <img src="https://media.discordapp.net/attachments/936029286610137179/1145812688719593692/league.png?width=822&height=1056" style="width:100%; max-width:300px;" alt="">
+            <div class="game-slider">
+                <img src="https://cdn.discordapp.com/attachments/1082603510421528626/1145839301712679003/Rocket.png?width=822&height=1056" style="width:100%; max-width:300px;" alt="">
+            </div>
         </div>
         <div class="col-lg-4">
-            <img src="https://media.discordapp.net/attachments/936029286610137179/1145812687750692935/valorant.png?width=822&height=1056" style="width:100%; max-width:300px;" alt="">
+            <div class="game-slider">
+                <img src="https://cdn.discordapp.com/attachments/1082603510421528626/1145839302031450253/valorant.png?width=822&height=1056" style="width:100%; max-width:300px;" alt="">
+            </div>
         </div>
     </slick>
 </template>
@@ -68,3 +76,19 @@ export default {
     }
 }
 </script>
+
+<style>
+/* Add this CSS */
+.game-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.game-slider img {
+    transition: transform 0.3s ease;
+}
+
+.game-slider:hover img {
+    transform: scale(1.1);
+}
+</style>

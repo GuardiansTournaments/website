@@ -26,9 +26,9 @@ export default {
 
         // Add a click event listener to the arrow
         arrow.addEventListener('click', () => {
-            // Scroll down by 250px when the arrow is clicked
-            window.scrollBy(0, 250);
-            $('.arrow').fadeOut();
+            // Scroll down by 1000px when the arrow is clicked
+            window.scrollBy(0, 850);
+            // Do not fade out the arrow
         });
     }
 }

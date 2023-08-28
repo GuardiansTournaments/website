@@ -5,7 +5,7 @@
         <div class="container-fluid position-absolute" style="top:0; left:0;">
             @include('blocks.welcome_nav')
             <div class="row d-flex justify-content-between align-items-center" style="padding-left: 2.5rem; padding-right:2.5rem;">
-                <div class="">
+                <div class="margt">
                     <div class="w-h1 maintext">THE PLATFORM THAT COMBINES ALL PLAYERS.</div>
                     <a href="{{route('register')}}" class="btn btn-lg btn-corner btn-info mt-5 me-5">Find out more.</a>
                     <a href="{{route('register')}}" class="btn btn-lg btn-corner btn-primary mt-5">Register Today</a>
@@ -24,14 +24,28 @@
     </section>
 
     <!-- Intro info -->
-    <section class="overflow-hidden pt-2">
+    <section class="overflow-hidden pt-2 mb-5">
         <div class="container-fluid p-0">
             <div class="row">
                 <info-slider></info-slider>
             </div>
         </div>
     </section>
-
+    
+ <!-- About -->
+    <section class="home_about4">
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div class="col-lg-6 p-5">
+                    <p class="text-start h1">// What do we offer players?</p>
+                    <p>Our tournament Discord server is an exclusive online platform designed for participants to come together and take part in competitive gaming events. It acts as a central hub for organizing, scheduling, and facilitating tournaments across a wide range of games. With dedicated text and voice channels, players can easily communicate, create teams, share updates, and coordinate matches. The server offers a centralized space for players to connect, compete, and foster a strong sense of community within the gaming tournament scene.</p>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="https://guardianstournaments.gg/img/about-img1.png" class="w-65 rounded" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Games -->
     <section class="home_games overflow-hidden pt-5">
@@ -48,20 +62,7 @@
     </section>
 
 
-    <!-- About -->
-    <section class="home_about1">
-        <div class="container d-flex justify-content-center">
-            <div class="row d-flex flex-wrap-reverse justify-content-start align-items-center">
-                <div class="col-lg-6 glow">
-                    <img src="https://guardianstournaments.gg/img/about-img1.png" class="w-100 corners-np" alt="">
-                </div>
-                <div class="col-lg-6 p-5">
-                    <div class="text-start h1" style="z-index:99;">What do we offer players</div>
-                    <p class="">Our tournament Discord server is an exclusive online platform designed for participants to come together and take part in competitive gaming events. It acts as a central hub for organizing, scheduling, and facilitating tournaments across a wide range of games. With dedicated text and voice channels, players can easily communicate, create teams, share updates, and coordinate matches. The server offers a centralized space for players to connect, compete, and foster a strong sense of community within the gaming tournament scene.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
     <!-- Discord server info -->
     <section class="home_discord">
@@ -93,22 +94,22 @@
 </section>
 
     <!-- About -->
-    <section class="home_about2">
-        <div class="container">
-            <div class="row d-flex justify-content-between align-items-center">
-                <div class="col-lg-6 p-5">
-                    <p class="text-start h1">What is our future vision?</p>
-                    <p>At Guardians Tournaments, we're on a mission to bring players together, fostering a sense of community and camaraderie. Our inclusive LAN and online tournaments provide an exciting platform where everyone can participate and thrive. Join us for an unforgettable esports experience that celebrates diversity and collective success.</p>
-                </div>
-                <div class="col-lg-6 glow">
-                    <img src="https://guardianstournaments.gg/img/about-img2.png" class="w-100 corners-np" alt="">
-                </div>
+      <section class="home_about3">
+    <div class="container-fluid">
+        <div class="row d-flex">
+            <div class="col-lg-6 d-flex justify-content-center">
+                <img src="https://guardianstournaments.gg/img/about-img1.png" class="w-65 rounded" alt="">
+            </div>
+            <div class="col-lg-6 p-5">
+                <p class="text-end h1">What is our future vision? \\</p>
+                <p class="text-end">At Guardians Tournaments, we're on a mission to bring players together, fostering a sense of community and camaraderie. Our inclusive LAN and online tournaments provide an exciting platform where everyone can participate and thrive. Join us for an unforgettable esports experience that celebrates diversity and collective success.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
-    <section class="home_tournaments pt-5">
+    <section class="home_tournaments pt-5 mb-5">
         <div class="p-5">
             <div class="row d-flex flex-wrap">
                 <h1 class="text-start pb-3 h1">Tournaments</h1>
@@ -145,7 +146,7 @@
 
     <!-- Sponsors -->
     <section>
-        <div class="container-fluid">
+        <div class="container">
             <sponsor-slider :images="{{$sponsors}}"></sponsor-slider>
         </div>
     </section>
