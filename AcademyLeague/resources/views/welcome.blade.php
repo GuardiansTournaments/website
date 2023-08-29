@@ -37,11 +37,11 @@
         <div class="container-fluid">
             <div class="row d-flex">
                 <div class="col-lg-6 p-5">
-                    <p class="text-start h1">// What do we offer players?</p>
-                    <p>Our tournament Discord server is an exclusive online platform designed for participants to come together and take part in competitive gaming events. It acts as a central hub for organizing, scheduling, and facilitating tournaments across a wide range of games. With dedicated text and voice channels, players can easily communicate, create teams, share updates, and coordinate matches. The server offers a centralized space for players to connect, compete, and foster a strong sense of community within the gaming tournament scene.</p>
+                    <p class="text-start h1">// Guardians Tournaments Hub *</p>
+                    <p class="text_main">Guardians Tournametns is an exclusive online platform designed for participants to come together and take part in competitive gaming events. It acts as a central hub for organizing, scheduling, and facilitating tournaments across a wide range of games. With dedicated text and voice channels in Discord and extra features on our website, players can easily communicate, create teams, share updates, and coordinate matches. The server offers a centralized space for players to connect, compete, and foster a strong sense of community within the gaming tournament scene, with the full expand of a functional Tournament Hosting Website.</p>
                 </div>
                 <div class="col-lg-6 d-flex justify-content-center">
-                    <img src="https://guardianstournaments.gg/img/about-img1.png" class="w-65 rounded" alt="">
+                    <img src="https://guardianstournaments.gg/img/hub.png" class="w-65 rounding" alt="">
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
     <section class="home_games overflow-hidden pt-5">
         <div class="pt-5 ps-5">
             <div class="row">
-                <h1 class="m-0 h1 pb-4">Games</h1>
+                <h1 class="m-0 h1 pb-4">// Competitive Games</h1>
             </div>
         </div>
         <div class="container-fluid p-0">
@@ -94,19 +94,19 @@
 </section>
 
     <!-- About -->
-      <section class="home_about3">
-    <div class="container-fluid">
-        <div class="row d-flex">
-            <div class="col-lg-6 d-flex justify-content-center">
-                <img src="https://guardianstournaments.gg/img/about-img1.png" class="w-65 rounded" alt="">
-            </div>
-            <div class="col-lg-6 p-5">
-                <p class="text-end h1">What is our future vision? \\</p>
-                <p class="text-end">At Guardians Tournaments, we're on a mission to bring players together, fostering a sense of community and camaraderie. Our inclusive LAN and online tournaments provide an exciting platform where everyone can participate and thrive. Join us for an unforgettable esports experience that celebrates diversity and collective success.</p>
+       <section class="home_about4">
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div class="col-lg-6 p-5">
+                    <p class="text-start h1">// Guardians Tournaments Quickplay *</p>
+                    <p class="text_main">The ultimate training tool for competitive gamers! Our new bot lets you find scrimmage matches on our Discord server with ease. Create parties, choose from different queues, and get into the action in games like Rocket League, CSGO, Valorant, League of Legends, and Rainbow Six Siege. Automated team voice channels and upcoming ranking displays enhance the experience. Elevate your skills with Guardians Quickplay now by joining our Discord Server above.</p>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="https://guardianstournaments.gg/img/quickplay.png" class="w-65 rounding" alt="">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <section class="home_tournaments pt-5 mb-5">
@@ -116,14 +116,14 @@
                 @foreach ($tournaments as $tournament)
                 <a href="{{route('tournament.show',$tournament->id)}}" class="col-md-3 mb-4">
                     <div class="card" style="min-height:250px">
-                        <img src="{{$tournament->settings()->banner}}" class="card-img-top-sm corners m-0 p-0">
+                        <img src="{{$tournament->settings()->banner}}" class="card-img-top-sm m-0 p-0">
                         <div class="card-body">
                             <div class="d-flex justify-content-start align-items-center">
                                 <img src="{{$tournament->user()->avatar}}" class="rounded-circle me-2" width="30" alt="">
                                 <div class="card-title h5 m-0" style="font-weight: bold;">{{$tournament->name}}</div>
                             </div>
                             <div class="card-text text-muted mt-1">{{$tournament->startIsoFormat()}}</div>
-                            <div class="round bg-info mt-3 mb-3" style="width:fit-content;"><span>{{$tournament->game()->name}}</span></div>
+                            <div class="bg-info mt-3 mb-3" style="width:fit-content;"><span>{{$tournament->game()->name}}</span></div>
 
                             <div>
                                 <div class="progress">

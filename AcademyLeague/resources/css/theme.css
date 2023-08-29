@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap);
+
 :root {
     --bs-body-color: #FFFFFF;
     --banner-color: rgba(10, 31, 58, 1);
@@ -7,7 +10,7 @@
     --input-bg-color: rgb(15, 45, 85);
     --input-bg-color-hover: rgb(21, 62, 116);
     --bs-font-sans-serif: "Roboto", sans-serif;
-    --bg-color: rgb(5, 13, 29);
+    --bg-color: rgb(5, 13, 29) 0%;
     --bs-primary: #03bba9;
     --bs-secondary: #e9e8e6;
     --bs-info-rgb: #415563;
@@ -18,8 +21,7 @@
 }
 
 .themebgcolor {
-    background-color: var(--bg-color);
-    /* background-image: linear-gradient(to top,  rgb(5, 13, 29) 0%, #09203f 100%); */
+    background-image: linear-gradient(to top, rgb(5, 13, 29) 0%, #09203f 100%);
 }
 
 .bg-primary {
@@ -72,6 +74,13 @@ h1 {
 }
 
 .btn-corner {
+    -webkit-clip-path:
+        polygon(0% 0%,
+            calc(100% - var(--notchSize)) 0%,
+            100% var(--notchSize),
+            100% 100%,
+            0% 100%,
+            0% calc(100% - var(--notchSize)));
     clip-path:
         polygon(0% 0%,
             calc(100% - var(--notchSize)) 0%,
@@ -88,6 +97,13 @@ h1 {
 
 
 .corners {
+    -webkit-clip-path:
+        polygon(0% 0%,
+            calc(100% - var(--notchSize)) 0%,
+            100% var(--notchSize),
+            100% 100%,
+            var(--notchSize) 100%,
+            0% calc(100% - var(--notchSize)));
     clip-path:
         polygon(0% 0%,
             calc(100% - var(--notchSize)) 0%,
@@ -103,6 +119,13 @@ h1 {
 }
 
 .corners-np {
+    -webkit-clip-path:
+        polygon(0% 0%,
+            calc(100% - var(--notchSize)) 0%,
+            100% var(--notchSize),
+            100% 100%,
+            var(--notchSize) 100%,
+            0% calc(100% - var(--notchSize)));
     clip-path:
         polygon(0% 0%,
             calc(100% - var(--notchSize)) 0%,
@@ -123,6 +146,13 @@ h1 {
 }
 
 .corners2 {
+    -webkit-clip-path:
+        polygon(0% 0%,
+            calc(100% - var(--notchSize)) 0%,
+            100% var(--notchSize),
+            100% 100%,
+            var(--notchSize) 100%,
+            0% calc(100% - var(--notchSize)));
     clip-path:
         polygon(0% 0%,
             calc(100% - var(--notchSize)) 0%,
@@ -155,6 +185,13 @@ thead {
     font-size: 1.125rem;
     border-radius: 0.5rem;
     border: 0px;
+    -webkit-clip-path:
+        polygon(0% 0%,
+            calc(100% - var(--notchSize)) 0%,
+            100% var(--notchSize),
+            100% 100%,
+            var(--notchSize) 100%,
+            0% calc(100% - var(--notchSize)));
     clip-path:
         polygon(0% 0%,
             calc(100% - var(--notchSize)) 0%,
@@ -171,6 +208,10 @@ thead {
     background-color: var(--input-bg-color-hover);
     color: var(--bs-body-color) !important;
     box-shadow: none;
+}
+
+.form-control::-moz-placeholder {
+    color: var(--bs-body-color);
 }
 
 .form-control::placeholder {
@@ -252,13 +293,7 @@ a:hover {
     border-radius: 0.5rem;
     min-height: 250px;
     position: relative;
-    clip-path:
-        polygon(0% 0%,
-            calc(100% - var(--notchSize)) 0%,
-            100% var(--notchSize),
-            100% 100%,
-            var(--notchSize) 100%,
-            0% calc(100% - var(--notchSize)));
+
     overflow: scroll;
     scrollbar-width: none;
 }
@@ -297,7 +332,6 @@ a:hover {
     background-position: center;
     height: 100%;
     width: 100%;
-    -webkit-box-shadow: inset 0px -60px 40px 0px var(--bg-color);
     box-shadow: inset 0px -60px 40px 0px var(--bg-color);
     /* background:
         radial-gradient(150% 150% at top, #00000000 60%, rgba(5, 13, 29, 0.8) 0%),
@@ -309,7 +343,7 @@ a:hover {
     bottom: 0;
     left: 0;
     background:
-        radial-gradient(120% 100% at top, #00000000 70%, rgba(5, 13, 29, 0.9) 0%) center/cover;
+        radial-gradient(120% 100% at top, #00000000 70%, #081c37 0%) center/cover;
     height: 300px;
     width: 100%;
 }
@@ -372,13 +406,15 @@ a:hover {
 
 
 .home_video_banner {
+    -o-object-position: center;
     object-position: center;
     /* Causes video to be centred against the header */
+    -o-object-fit: cover;
     object-fit: cover;
     /* Causes video to cover/stretch to the header */
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    opacity: 0.8;
 }
 
 .bold {
@@ -412,8 +448,6 @@ a:hover {
 
 .home_discord {
     position: relative;
-    background-image: url('/images/welcome/discord_banner.jpeg');
-    background-color: #000000;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -423,21 +457,9 @@ a:hover {
     max-height: 500px;
 }
 
-.home_about1 {
-    width: 100%;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
 
-.home_about2 {
-    width: 100%;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    /* background-image: linear-gradient(to top, rgb(5, 13, 29) 0%, #09203f 100%); */
-}
 
 .home_discord_top {
-    -webkit-box-shadow: inset 0px 30px 20px 0px var(--bg-color);
     box-shadow: inset 0px 30px 20px 0px var(--bg-color);
     top: 0;
     left: 0;
@@ -447,7 +469,6 @@ a:hover {
 }
 
 .home_discord_bottom {
-    -webkit-box-shadow: inset 0px -30px 20px 0px var(--bg-color);
     box-shadow: inset 0px -30px 20px 0px var(--bg-color);
     bottom: 0;
     left: 0;
@@ -472,8 +493,6 @@ a:hover {
 }
 
 .home_sponsors {
-    -webkit-box-shadow: -1px -19px 22px 7px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px -19px 22px 7px rgba(0, 0, 0, 0.75);
     box-shadow: -1px -19px 22px 7px rgba(0, 0, 0, 0.75);
     z-index: 1;
 }
@@ -496,6 +515,7 @@ a:hover {
 }
 
 .card-img-top {
+    -o-object-fit: cover;
     object-fit: cover;
     /* max-height: 300px; */
     border-top-left-radius: 0.5rem;
@@ -504,6 +524,7 @@ a:hover {
 }
 
 .card-img-top-sm {
+    -o-object-fit: cover;
     object-fit: cover;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
@@ -511,6 +532,7 @@ a:hover {
 }
 
 .card-img {
+    -o-object-fit: cover;
     object-fit: cover;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
@@ -648,9 +670,9 @@ a:hover {
     }
 
     .arrow span {
-        width: 2vw;
+        width: 3vw;
         /* Increase width for mobile */
-        height: 2vw;
+        height: 3vw;
         /* Increase height for mobile */
         transform: rotate(45deg);
         /* Keep the rotation for the arrow span */
@@ -701,4 +723,48 @@ a:hover {
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
     }
+}
+
+.home_about1 {
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.home_about2 {
+    width: 100%;
+    padding-bottom: 6rem;
+    /* background-image: linear-gradient(to top, rgb(5, 13, 29) 0%, #09203f 100%); */
+}
+
+.margt {
+    padding-top: 10rem;
+}
+
+.rounding {
+    border-radius: 1vw;
+}
+
+.home_about3 {
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    /* background-image: linear-gradient(to top, rgb(5, 13, 29) 0%, #09203f 100%); */
+}
+
+.home_about4 {
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    background-size: cover;
+}
+
+.text_main {
+    text-align: justify;
+    font-size: medium;
+}
+
+.dropshadow {
+    text-shadow: m0 0 3px #FF0000,
+        0 0 5px #0000FF;
 }

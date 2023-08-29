@@ -3,7 +3,7 @@
         <!-- Tournaments -->
         <div class="col-lg-3 d-flex flex-column">
             <div class="text-center w-h1 mb-3">
-                <i class="bi bi-trophy"></i>
+                <i class="bi bi-diagram-3"></i>
             </div>
             <div class="d-flex justify-content-center">
                 <div class="h5 bold text-center">Tournaments</div>
@@ -16,7 +16,7 @@
         <!-- Matchmaking -->
         <div class="col-lg-3 d-flex flex-column">
             <div class="text-center w-h1 mb-3">
-                <i class="bi bi-search"></i>
+            <i class="bi bi-diagram-2"></i>
             </div>
             <div class="d-flex justify-content-center">
                 <div class="h5 bold text-center">Matchmaking</div>
@@ -29,7 +29,7 @@
         <!-- Competition -->
         <div class="col-lg-3 d-flex flex-column">
             <div class="text-center w-h1 mb-3">
-                <i class="bi bi-award"></i>
+            <i class="bi bi-bar-chart"></i>
             </div>
             <div class="d-flex justify-content-center">
                 <div class="h5 bold text-center">Competition</div>
